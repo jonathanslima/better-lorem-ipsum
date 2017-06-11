@@ -1,0 +1,40 @@
+/*!
+Theme Name: Caju - Front End Test
+Author: Jonathan
+Author URI: http://jonathanslima.github.io/
+Project author: Caju
+Project: Better Lorem Ipsum
+Date: 11/06/2017
+
+*/
+//MAIN VARIABLES
+@import '_site-variables';
+
+//SITE ADD ONS
+@import '_site-mixins';
+@import '_site-colors';
+@import '_site-fonts';
+
+//SITE INPUTS
+@import '_site-buttons';
+@import '_site-inputs';
+
+//SITE BASE
+@import '_site-titles';
+@import '_site-header';
+@import '_site-footer';
+@import '_site-base';
+
+//PAGES
+@import '_page-home';
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) {}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $screen-md-min) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) {}

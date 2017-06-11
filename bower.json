@@ -1,0 +1,20 @@
+{
+  "name": "Caju - Teste Front End",
+  "authors": [
+    "Jonathan Lima <jonathan633.jl@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
