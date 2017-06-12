@@ -1,24 +1,22 @@
 /* BUTTONS -----------------------------------------------------------*/
 
-@mixin btn-color($color, $bg-color, $color-hover, $bg-hover) {
-	color: $color;
-	background: $bg-color;
-	&:hover, &:focus{
-		color: $color-hover;
-		background: $bg-hover;
-	}
-}
-
 .btn{
 	@extend .trans;
-	font-family: $font-default;
 	display: inline-block;
-	height: 30px;
-	padding: 0 10px;
-	font-size: 14px;
-	border: 1px solid $preto;
-	color: $preto;
+	padding: 10px;
 	text-decoration: none;
-	border-radius: 0;
+	border-radius: 2px;
+	border: none;
 	outline: none;
+	width: 100%;
+	font-family: $font-title;
+	text-transform: uppercase;
+	background-color: $blue;
+	color: $white;
+	font-size: 13px;
+	font-weight: 600;
+
+	&:focus, &:hover {
+		opacity: 0.7;
+	}
 }

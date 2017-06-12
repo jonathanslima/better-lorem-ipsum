@@ -1,9 +1,35 @@
 /* TITLES -----------------------------------------------------------*/
 
-.title{
-	font-size: 26px;
+.title {
+  font-size: 30px;
+  font-family: $font-title, sans-serif;
+  font-weight: 300;
 }
 
-.subtitle{
-	font-size: 20px;
+.title-section {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.title-variant {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.title-small{
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .title {
+    font-size: 52px;
+  }
+
+  .title-section,
+  .title-variant {
+    font-size: 36px;
+  }
 }

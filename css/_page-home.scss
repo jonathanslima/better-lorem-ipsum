@@ -1,0 +1,155 @@
+.main-content{
+  background: $black-back;
+  margin-bottom: 50px;
+
+  .title{
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .text{
+    text-align: center;
+    color: silver;
+    font-size: 10px;
+  }
+}
+
+.form{
+  display: inline-block;
+  margin-bottom: 50px;
+
+  .icon{
+    line-height: 38px;
+
+  }
+}
+
+.features{
+  header{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .features-left,
+  .features-right{
+    margin: 0;
+    padding: 0;
+  }
+
+  .features-left{
+    .feat-top-left,
+    .feat-bottom-left{
+      display: inline-block;
+      padding-bottom: 50px;
+      margin-bottom: 15px;
+    }
+
+    .title{
+      padding: 0 15px;
+    }
+
+    .text{
+      padding: 0 15px;
+    }
+  }
+
+  .features-right{
+    .title{
+      padding: 0 15px;
+    }
+
+    .text{
+      padding: 0 15px;
+    }
+
+    .feat-right{
+      display: inline-block;
+      padding-bottom: 50px;
+      margin-bottom: 15px;
+
+      .text{
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .text{
+    color: $black-back;
+    margin: 0;
+  }
+
+  .text-modified{
+    color: $black;
+    font-weight: bold;
+  }
+}
+
+.number{
+  span{
+    padding: 15px 25px;
+    font-size: 25px;
+    display: inline-block;
+  }
+
+  .number-1{
+    background: #68b2d1;
+  }
+
+  .number-2{
+    background: #71777e;
+  }
+
+  .number-3{
+    background: #a189ed;
+  }
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .main-content{
+    margin-top: -1px;
+    background-image: url('../img/back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .form{
+    width: 50%;
+    margin-left: 25%;
+
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .main-content{
+    height: 830px;
+  }
+
+  .form{
+    width: 34%;
+    margin-left: 33%;
+  }
+
+  .main-image-content{
+    text-align: center;
+
+    img{
+      width: 600px;
+    }
+  }
+}
+
+/* Large devices (large desktops, 1600px and up) */
+@media (min-width: 1600px) {
+  .form{
+    width: 26%;
+    margin-left: 37%;
+  }
+}

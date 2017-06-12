@@ -1,20 +1,33 @@
 /* INPUTS -----------------------------------------------------------*/
 
-.input{
-	@extend .trans;
-	border: 1px solid $preto;
-	padding: 10px;
-	font-family: $font-default;
-	background-color: $branco;
-	color: $text-color;
-	@include placeholder {
-		color: red;
-	}
-	&:focus{
-		border-color: $preto;
-	}
+.input {
+  @extend .trans;
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-family: $font-title;
+  text-transform: uppercase;
+  background-color: #46494b;
+  color: $white;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+
+  &:focus, &:hover{
+    border: none;
+    outline: none;
+  }
 }
 
-.select{
-	font-family: $font-default;	
+
+::-webkit-input-placeholder{
+  color: $white;
+}
+
+/* MEDIA QUERY ------------------------------------------------------------*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  margin-left: -2px;
 }

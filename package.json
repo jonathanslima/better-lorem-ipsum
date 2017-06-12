@@ -1,6 +1,6 @@
 {
-  "name": "Teste Front End",
-  "version": "0.1",
+  "name": "TesteFrontEnd",
+  "version": "1.0.0",
   "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.14.0",

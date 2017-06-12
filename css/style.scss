@@ -10,6 +10,59 @@ Date: 11/06/2017
 //MAIN VARIABLES
 @import '_site-variables';
 
+//BOOTSTRAP 3
+// Core variables and mixins
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/_variables";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/_mixins";
+
+// Reset and dependencies
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/_normalize";
+@import "../css/_site-icomoon.css";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/print";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
+
+// Core CSS
+ @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/type";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/code";
+ @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/_grid";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+ //@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+
+// Components
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/badges";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/media";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/close";
+
+// Components w/ JavaScript
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
+
+// Utility classes
+ @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+ @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
 //SITE ADD ONS
 @import '_site-mixins';
 @import '_site-colors';
@@ -31,10 +84,10 @@ Date: 11/06/2017
 /* MEDIA QUERY ------------------------------------------------------------*/
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {}
+@media (min-width: 768px) {}
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: $screen-md-min) {}
+@media (min-width: 992px) {}
 
 /* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {}
+@media (min-width: 1200px) {}
