@@ -53,7 +53,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
-				<div class="col-sm-offset-2 col-sm-8">
+				<div class="col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
 					<h2 class="title white mb-remove">Better Lorem Ipsum</h2>
 
 					<p class="text">O Gemmius é uma ferramenta projetada para organizaçães
@@ -66,25 +66,24 @@
 			</div>
 
 			<form id="form" action="" method="post" class="form">
-				<div class="alert-error-name"></div>
 				<div class="col-xs-12">
-					<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-bars white"></i></span>
-					<input id="nome" class="input col-xs-10 col-md-11" type="text" pattern="[a-zA-Z]+" placeholder="NOME *" required autofocus>
+					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-1"><i class="icon-user white"></i></span>
+					<input id="nome" class="input col-xs-10 col-sm-11 col-lg-11" type="text" placeholder="NOME *" required>
 				</div>
 
 				<div class="col-xs-12 col-lg-6">
-					<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-envelope white"></i></span>
-					<input id="email" class="input col-xs-10 col-md-11 col-lg-10" type="email" placeholder="E-MAIL*" required>
+					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-3"><i class="icon-envelope white"></i></span>
+					<input id="email" class="input col-xs-10 col-sm-11 col-lg-9" type="email" placeholder="E-MAIL*" required>
 				</div>
 
 				<div class="col-xs-12 col-lg-6">
-					<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
-					<input id="tel" class="input col-xs-10 col-md-11 col-lg-10" title="Esse campo só aceita números" type="tel" min="8" pattern="[0-9]+$" placeholder="TELEFONE">
+					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
+					<input id="tel" class="input col-xs-10 col-sm-11 col-lg-10" title="Esse campo só aceita números" type="tel" placeholder="TELEFONE">
 				</div>
 
 				<div class="col-xs-12">
-					<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-pencil white"></i></span>
-					<input class="input col-xs-10 col-md-11" type="text" placeholder="MENSAGEM">
+					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-1"><i class="icon-pencil white"></i></span>
+					<input class="input col-xs-10 col-sm-11 col-lg-11" type="text" placeholder="MENSAGEM">
 				</div>
 
 				<div class="col-xs-12">
@@ -145,7 +144,7 @@
 <section class="section-fluid features">
 	<div class="container">
 		<div class="row">
-			<header class="col-xs-12 features-header">
+			<header class="col-xs-12 features-header col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
 				<h2 class="title title-section">Nossos diferenciais competitivos</h2>
 				<p class="text text text-modified">Speed up the line with quick, easy modifiers</p>
 				<p class="text gray">Light soy, extra noodles—item modifiers make it simple andefficient to get your customers’ orders just right.</p>
@@ -171,7 +170,7 @@
 					</section>
 
 					<!--	BLACK BLOCK -->
-					<section class="full-width bg-black-input feat-bottom-left white">
+					<section class="full-width bg-black-box feat-bottom-left white">
 						<header>
 							<div class="full-width number"><span class="number-2">2</span></div>
 							<h2 class="title title-variant">Elimina tarefas
@@ -192,7 +191,7 @@
 					<div class="full-width bg-purple white feat-right">
 						<header>
 							<div class="full-width number"><span class="number-3">3</span></div>
-							<h2 class="title title-variant">Focado em progressos</h2>
+							<h2 class="title title-variant">Focado em processos</h2>
 						</header>
 
 						<article>
@@ -217,7 +216,7 @@
 	</div>
 </section>
 
-<footer class="footer bg-black">
+<footer class="footer">
 	<div class="container">
 		<div class="row">
 		<!-- Hidden desktop -->
@@ -252,6 +251,7 @@
 </footer>
 
 <script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="libs/jquery-validation/dist/jquery.validate.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

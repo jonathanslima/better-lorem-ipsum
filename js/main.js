@@ -14,5 +14,10 @@ $(document).ready(function ($) {
 	$btnClose.on('click', function(){
 		$header.fadeOut();
 	})
+
+
+	// VALIDATION FORM
+	$('#form').validate();
+
 });
 

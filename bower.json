@@ -15,6 +15,7 @@
     "libs"
   ],
   "dependencies": {
-    "bootstrap-sass": "^3.3.7"
+    "bootstrap-sass": "^3.3.7",
+    "jquery-validation": "^1.16.0"
   }
 }

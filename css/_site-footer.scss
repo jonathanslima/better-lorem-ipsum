@@ -2,6 +2,7 @@
 
 .footer{
   margin-top: 30px;
+  background-color: #333b43;
 
   .text{
     padding: 15px 0;
@@ -31,7 +32,7 @@
 
       li{
         display: inline;
-        color: gray;
+        color: $gray;
 
         i{
           margin-right: 5px;
