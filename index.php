@@ -49,50 +49,54 @@
 	<span class="phone blue"><i class="icon-mobile-phone"></i> +55 (888) 760 1940</span>
 </header>
 
-<main class="container-fluid main-content">
-	<div class="row">
-		<div class="col-xs-12">
-			<h2 class="title white">Better Lorem Ipsum</h2>
+<main class="full-width main-content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="col-sm-offset-2 col-sm-8">
+					<h2 class="title white mb-remove">Better Lorem Ipsum</h2>
 
-			<p class="text">O Gemmius é uma ferramenta projetada para organizaçães
-				que desejam crescer otimizando recursos.</p>
+					<p class="text">O Gemmius é uma ferramenta projetada para organizaçães
+						que desejam crescer otimizando recursos.</p>
 
-			<p class="text blue">
-				<small><i>Os campos com (*) são de obrigatoriedade</i></small>
-			</p>
+					<p class="text blue section-padding pb-remove">
+						<small><i>Os campos com (*) são de obrigatoriedade</i></small>
+					</p>
+				</div>
+			</div>
+
+			<form id="form" action="" method="post" class="form">
+				<div class="alert-error-name"></div>
+				<div class="col-xs-12">
+					<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-bars white"></i></span>
+					<input id="nome" class="input col-xs-10 col-md-11" type="text" pattern="[a-zA-Z]+" placeholder="NOME *" required autofocus>
+				</div>
+
+				<div class="col-xs-12 col-lg-6">
+					<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-envelope white"></i></span>
+					<input id="email" class="input col-xs-10 col-md-11 col-lg-10" type="email" placeholder="E-MAIL*" required>
+				</div>
+
+				<div class="col-xs-12 col-lg-6">
+					<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
+					<input id="tel" class="input col-xs-10 col-md-11 col-lg-10" title="Esse campo só aceita números" type="tel" min="8" pattern="[0-9]+$" placeholder="TELEFONE">
+				</div>
+
+				<div class="col-xs-12">
+					<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-pencil white"></i></span>
+					<input class="input col-xs-10 col-md-11" type="text" placeholder="MENSAGEM">
+				</div>
+
+				<div class="col-xs-12">
+					<button type="submit" class="btn">Enviar</button>
+				</div>
+
+			</form>
+
+			<figure class="main-image-content">
+				<img src="img/macbook.png" class="hidden-xs hidden-sm hidden-md" alt="imagem de um macbook">
+			</figure>
 		</div>
-
-		<form id="form" action="" method="post" class="form">
-			<div class="alert-error-name"></div>
-			<div class="col-xs-12">
-				<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-bars white"></i></span>
-				<input id="nome" class="input col-xs-10 col-md-11" type="text" pattern="[a-zA-Z]+" placeholder="NOME *" required autofocus>
-			</div>
-
-			<div class="col-xs-12 col-lg-6">
-				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-envelope white"></i></span>
-				<input id="email" class="input col-xs-10 col-md-11 col-lg-10" type="email" placeholder="E-MAIL*" required>
-			</div>
-
-			<div class="col-xs-12 col-lg-6">
-				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
-				<input id="tel" class="input col-xs-10 col-md-11 col-lg-10" title="Esse campo só aceita números" type="tel" min="8" pattern="[0-9]+$" placeholder="TELEFONE">
-			</div>
-
-			<div class="col-xs-12">
-				<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-pencil white"></i></span>
-				<input class="input col-xs-10 col-md-11" type="text" placeholder="MENSAGEM">
-			</div>
-
-			<div class="col-xs-12">
-				<button type="submit" class="btn">Enviar</button>
-			</div>
-
-		</form>
-		
-		<figure class="main-image-content">
-			<img src="img/macbook.png" class="hidden-xs hidden-sm hidden-md" alt="imagem de um macbook">
-		</figure>
 	</div>
 </main>
 
