@@ -92,53 +92,116 @@
 	</div>
 </main>
 
+<div class="container-fluid items hidden-xs">
+	<div class="row">
+		<ul class="list-unstyled items-list">
+			<li class="col-sm-6 col-lg-3 items-li">
+				<div class="icon">
+					<div class="icon-1"></div>
+				</div>
+
+				<h3 class="blue title-small">Gestão Médica</h3>
+
+				<span class="text gray">Desenvolvido para ser uma ferramenta de apoio aos processos e decisões...</span>
+			</li>
+
+			<li class="col-sm-6 col-lg-3 items-li">
+				<div class="icon icon-2"></div>
+
+				<h3 class="blue title-small">Monitoramento</h3>
+
+				<span class="text gray">A inteligência de gestão de processos que aprendemos nos vários anos...</span>
+			</li>
+
+			<li class="col-sm-6 col-lg-3 items-li">
+				<div class="icon icon-3"></div>
+
+				<h3 class="blue title-small">Integração</h3>
+
+				<span class="text gray">Os processos administrativos e médicos são únicos e precisam de uma visão...</span>
+			</li>
+
+			<li class="col-sm-6 col-lg-3 items-li">
+				<div class="icon icon-4"></div>
+
+				<h3 class="blue title-small">Usabilidade</h3>
+
+				<span class="text gray">Precisa ser fácil de usar. Não queremos profissionais de sistemas...</span>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+<!-- FEATURES BOXES -->
 <section class="section-fluid features">
 	<div class="container">
 		<div class="row">
-			<header class="col-xs-12">
+			<header class="col-xs-12 features-header">
 				<h2 class="title title-section">Nossos diferenciais competitivos</h2>
 				<p class="text text text-modified">Speed up the line with quick, easy modifiers</p>
-				<p class="text">Light soy, extra noodles—item modifiers make it simple andefficient to get your customers’ orders just right.</p>
+				<p class="text gray">Light soy, extra noodles—item modifiers make it simple andefficient to get your customers’ orders just right.</p>
 			</header>
 		</div>
 
 		<div class="row">
 			<section class="col-xs-12 features-container">
+			<!--	BLOCK LEFT	-->
 				<div class="col-xs-12 col-sm-6 features-left">
-					<div class="full-width bg-blue white feat-top-left">
-						<div class="full-width number"><span class="number-1">1</span></div>
-						<h2 class="title title-variant">Pensando para ser amigável</h2>
+					<!--	BLUE BLOCK -->
+					<section class="full-width bg-blue white feat-top-left">
+						<header>
+							<div class="full-width number"><span class="number-1">1</span></div>
+							<h2 class="title title-variant">Pensando para ser amigável</h2>
+						</header>
 
-						<p class="text white">
-							Speed up the line with quick, easy modifiers Light soy, extra noodles—item modifiers make it simple and efficient to get your customers’ orders just right.
-						</p>
-					</div>
+						<article>
+							<p class="text white">
+								Speed up the line with quick, easy modifiers Light soy, extra noodles—item modifiers make it simple and efficient to get your customers’ orders just right.
+							</p>
+						</article>
+					</section>
 
-					<div class="full-width bg-black-input feat-bottom-left white">
-						<div class="full-width number"><span class="number-2">2</span></div>
-						<h2 class="title title-variant">Elimina tarefas
-							repetitivas</h2>
+					<!--	BLACK BLOCK -->
+					<section class="full-width bg-black-input feat-bottom-left white">
+						<header>
+							<div class="full-width number"><span class="number-2">2</span></div>
+							<h2 class="title title-variant">Elimina tarefas
+								repetitivas</h2>
+						</header>
 
-						<p class="text white">
-							Speed up the line with quick, easy modifiers Light soy, extra noodles.
-						</p>
-					</div>
+						<article>
+							<p class="text white">
+								Speed up the line with quick, easy modifiers Light soy, extra noodles.
+							</p>
+						</article>
+					</section>
 				</div>
 
+				<!--	BLOCK RIGHT	-->
+				<!--	PURPLE BLOCK -->
 				<div class="col-xs-12 col-sm-6 features-right">
 					<div class="full-width bg-purple white feat-right">
-						<div class="full-width number"><span class="number-3">3</span></div>
-						<h2 class="title title-variant">Pensando para ser amigável</h2>
+						<header>
+							<div class="full-width number"><span class="number-3">3</span></div>
+							<h2 class="title title-variant">Focado em progressos</h2>
+						</header>
 
-						<p class="text white">
-							Speed up the line with quick, easy modifiers Light soy, extra noodles—item modifiers make it simple and efficient to get your customers’ orders just right.
-						</p>
+						<article>
+							<p class="text white">
+								Speed up the line with quick, easy modifiers Light soy, extra noodles—item modifiers make it simple and efficient to get your customers’ orders just right.
+							</p>
 
-						<p class="text white">
-							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde
-							o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos
-							e os embaralhou para fazer um livro.
-						</p>
+							<p class="text white">
+								Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde
+								o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos
+								e os embaralhou para fazer um livro.
+							</p>
+						</article>
+
+						<div id="img-detail">
+
+						</div>
 					</div>
 				</div>
 			</section>
@@ -149,7 +212,33 @@
 <footer class="footer bg-black">
 	<div class="container">
 		<div class="row">
-			<p class="text gray-light hidden-sm hidden-md hidden-lg">&copy; <?php echo date('Y')?> - Caju Tecnologia</p>
+		<!-- Hidden desktop -->
+			<p class="text gray hidden-sm hidden-md hidden-lg">&copy; <?php echo date('Y')?> - Caju Tecnologia</p>
+
+			<!-- Hidden mobile -->
+			<div class="gray hidden-xs">
+				<div class="col-sm-4 col-md-5 text ">
+					&copy; <?php echo date('Y')?> - Caju Tecnologia
+				</div>
+
+				<div class="col-sm-8 col-md-7 contact">
+					<ul class="list-unstyled">
+						<li>
+							<a href=""><i class="icon-facebook"></i></a>
+							<a href=""><i class="icon-google-plus"></i></a>
+							Redes Sociais
+						</li>
+						<li>
+							<i class="icon-envelope"></i>
+							E-mail: teste@caju.com.br
+						</li>
+						<li>
+							<i class="icon-mobile-phone"></i>
+							+55 (81) 3212-1546
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

@@ -1,6 +1,5 @@
 .main-content{
   background: $black-back;
-  margin-bottom: 50px;
 
   .title{
     text-align: center;
@@ -30,10 +29,12 @@
     margin-bottom: 30px;
   }
 
-  .features-left,
-  .features-right{
-    margin: 0;
+  .features-right,
+  .features-left{
     padding: 0;
+    header{
+      text-align: left;
+    }
   }
 
   .features-left{
@@ -41,7 +42,7 @@
     .feat-bottom-left{
       display: inline-block;
       padding-bottom: 50px;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
     }
 
     .title{
@@ -108,6 +109,81 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  //ITEMS
+  .items{
+    background: $gray-light;
+
+    .items-list{
+      display: table;
+      margin: 0;
+      padding: 0;
+    }
+
+    .items-li{
+      text-align: center;
+      padding: 40px 50px;
+      border: 1px solid rgba($gray-dark, 0.1);
+      height: 275px;
+    }
+  }
+
+  //SPRITE ICONS
+  .items{
+    .icon{
+      position: relative;
+      display: inline-block;height: 100px;
+    }
+  }
+
+  .icon-1,
+  .icon-2,
+  .icon-3,
+  .icon-4{
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -54px;
+    }
+  }
+
+  .icon-1{
+    &:after{
+      width: 108px;
+      height: 90px;
+      background: url('../img/icons.png') no-repeat 0 -14px;
+    }
+  }
+
+  .icon-2 {
+    &:after{
+      background: url('../img/icons.png') no-repeat -177px 0;
+      width: 113px;
+      height: 104px;
+    }
+  }
+
+  .icon-3 {
+    &:after{
+      background: url('../img/icons.png') no-repeat -366px -10px;
+      width: 93px;
+      height: 94px;
+    }
+  }
+
+  .icon-4 {
+    &:after{
+      background: url('../img/icons.png') no-repeat -542px -15px;
+      width: 103px;
+      height: 89px;
+    }
+  }
+
+  //END SPRITE
+
   .main-content{
     margin-top: -1px;
     background-image: url('../img/back.jpg');
@@ -119,17 +195,105 @@
   .form{
     width: 50%;
     margin-left: 25%;
+  }
 
+  .features{
+    .features-right,
+    .features-left{
+      padding: 0 15px;
+      header{
+        width: 80%;
+      }
+    }
+  }
+
+  .feat-top-left{
+    height: 350px;
+  }
+
+  .feat-bottom-left{
+    height: 300px;
+  }
+
+  .feat-right{
+    height: 680px;
+  }
+
+  #img-detail{
+    background-image: url("../img/icon-medical.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 120px;
+    height: 200px;
+    margin-top: 50px;
+    padding-right: 30px;
+    width: 95%;
+  }
+
+  //FOOTER
+
+  .footer{
+    height: 150px;
+    padding: 55px 0;
+
+    .text{
+      text-align: left;
+      padding: 15px;
+    }
+
+    .contact{
+      text-align: right;
+      font-size: 12px;
+
+      li{
+        display: inline;
+        color: gray;
+        margin-right: 15px;
+
+        a{
+          color: $gray;
+
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+    }
   }
 }
 
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+  .features{
+    .features-right,
+    .features-left{
+      .feat-top-left,
+      .feat-bottom-left,
+      .feat-right{
+        .title{
+          padding-left: 50px;
+          padding-right: 50px;
+        }
+
+        article{
+          padding-left: 30px;
+          padding-right: 30px;
+        }
+      }
+    }//end features-left
+  }//end features
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .items{
+    .items-li{
+      height: 310px;
+    }
+  }
+
   .main-content{
-    height: 830px;
+    height: 785px;
   }
 
   .form{
@@ -143,6 +307,38 @@
     img{
       width: 600px;
     }
+  }
+
+  .features{
+    .features-header{
+      width: 40%;
+      margin-left: 30%;
+    }
+
+    .features-right,
+    .features-left{
+      header{
+        width: 70%;
+      }
+
+      .feat-top-left,
+      .feat-bottom-left,
+      .feat-right{
+        .title{
+          padding-left: 65px;
+          padding-right: 65px;
+        }
+
+        article{
+          padding-left: 50px;
+          padding-right: 100px;
+        }
+      }
+    }//end features-left
+  }//end features
+
+  #img-detail{
+    background-size: 180px;
   }
 }
 
