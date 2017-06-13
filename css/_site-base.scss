@@ -25,6 +25,14 @@ a {
   line-height: 18px;
 }
 
+.alert-error-name,
+.alert-error-email,
+.alert-error-tel{
+  color: red;
+  font-size: 12px;
+  padding-left: 15px;
+}
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {

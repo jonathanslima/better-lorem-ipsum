@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
 <header class="header">
 	<div class="container">
 		<div class="row">
@@ -28,11 +27,15 @@
 				</div>
 
 				<div class="col-xs-3 menu-icon-mobile hidden-sm hidden-md hidden-lg">
-				<span class="icon-bars white">
+					<span class="icon-bars white"></span>
 				</div>
 
-				<nav class="header-nav hidden-xs col-sm-9">
-					<ul class="list-unstyled">
+				<nav class="header-nav col-sm-9">
+					<button class="close hidden-sm hidden-md hidden-lg">
+						<i class="icon-close white"></i>
+					</button>
+
+					<ul class="list-unstyled menu">
 						<li class="header-nav-li"><a href="#" class="header-nav-a">Conheça</a></li>
 						<li class="header-nav-li"><a href="#" class="header-nav-a">Vantagens</a></li>
 						<li class="header-nav-li"><a href="#" class="header-nav-a">Cases</a></li>
@@ -43,7 +46,7 @@
 		</div>
 	</div>
 
-	<span class="phone blue hidden-xs hidden-sm">+55 (888) 760 1940</span>
+	<span class="phone blue"><i class="icon-mobile-phone"></i> +55 (888) 760 1940</span>
 </header>
 
 <main class="container-fluid main-content">
@@ -59,20 +62,21 @@
 			</p>
 		</div>
 
-		<form action="" class="form">
+		<form id="form" action="" method="post" class="form">
+			<div class="alert-error-name"></div>
 			<div class="col-xs-12">
 				<span class="icon bg-black-input white col-xs-2 col-md-1"><i class="icon-bars white"></i></span>
-				<input class="input col-xs-10 col-md-11" type="text" placeholder="NOME *" required autofocus>
+				<input id="nome" class="input col-xs-10 col-md-11" type="text" pattern="[a-zA-Z]+" placeholder="NOME *" required autofocus>
 			</div>
 
 			<div class="col-xs-12 col-lg-6">
-				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-3"><i class="icon-envelope white"></i></span>
-				<input class="input col-xs-10 col-md-11 col-lg-9" type="email" placeholder="E-MAIL*" required>
+				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-envelope white"></i></span>
+				<input id="email" class="input col-xs-10 col-md-11 col-lg-10" type="email" placeholder="E-MAIL*" required>
 			</div>
 
 			<div class="col-xs-12 col-lg-6">
-				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-3"><i class="icon-mobile-phone white"></i></span>
-				<input class="input col-xs-10 col-md-11 col-lg-9" type="tel" placeholder="TELEFONE">
+				<span class="icon bg-black-input white col-xs-2 col-md-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
+				<input id="tel" class="input col-xs-10 col-md-11 col-lg-10" title="Esse campo só aceita números" type="tel" min="8" pattern="[0-9]+$" placeholder="TELEFONE">
 			</div>
 
 			<div class="col-xs-12">
@@ -81,13 +85,13 @@
 			</div>
 
 			<div class="col-xs-12">
-				<button class="btn">Enviar</button>
+				<button type="submit" class="btn">Enviar</button>
 			</div>
 
 		</form>
 		
 		<figure class="main-image-content">
-			<img src="img/macbook.png" class="hidden-xs hidden-sm hidden-md" alt="">
+			<img src="img/macbook.png" class="hidden-xs hidden-sm hidden-md" alt="imagem de um macbook">
 		</figure>
 	</div>
 </main>

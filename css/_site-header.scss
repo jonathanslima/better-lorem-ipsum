@@ -1,5 +1,4 @@
 /* HEADER -----------------------------------------------------------*/
-
 .header{
   background: $black;
   display: block;
@@ -52,11 +51,19 @@
   }
 }
 
+.header-nav{
+  display: none;
+}
+
 /* MEDIA QUERY ------------------------------------------------------------*/
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .header {
     background: $black-back;
+  }
+
+  .header-nav{
+    display: block;
   }
 }
 

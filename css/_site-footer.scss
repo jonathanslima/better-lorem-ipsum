@@ -8,3 +8,34 @@
     text-align: center;
   }
 }
+
+@media (min-width: 768px) {
+  .footer{
+    height: 150px;
+    padding: 55px 0;
+
+    .text{
+      text-align: left;
+      padding: 15px;
+    }
+
+    .contact{
+      text-align: right;
+      font-size: 12px;
+
+      li{
+        display: inline;
+        color: gray;
+        margin-right: 15px;
+
+        a{
+          color: $gray;
+
+          &:hover{
+            color: $blue;
+          }
+        }
+      }
+    }
+  }
+}
