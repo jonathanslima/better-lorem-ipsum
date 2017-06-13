@@ -13,3 +13,6 @@
 	- Gulp-Sass
 	- Browser-Sync
 
+## Gulp
+
+- Use a task ```gulp``` pra servir os arquivos
