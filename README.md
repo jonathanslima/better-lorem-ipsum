@@ -5,6 +5,7 @@
 - ```bower install```
 	- Bootstrap
 	- jQuery
+	- jQuery Validation
 
 - ```npm install```
 	- Gulp
