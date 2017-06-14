@@ -10,6 +10,10 @@ body {
   color: $text-color;
 }
 
+.trans{
+  transition: all 500ms ease;
+}
+
 a {
   @extend .trans;
   color: $link-color;

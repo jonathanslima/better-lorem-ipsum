@@ -18,7 +18,7 @@ gulp.task('browserSync', function() {
     //initialize browsersync
     browserSync.init(files, {
     //browsersync with a php server
-    proxy: "localhost/better-lorem-ipsum/",
+    proxy: "localhost/estudos-projetos/Interface/better-lorem-ipsum/",
     notify: false
     });
 });

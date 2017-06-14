@@ -17,7 +17,24 @@ $(document).ready(function ($) {
 
 
 	// VALIDATION FORM
-	$('#form').validate();
+	$('#form').validate({
+    rules: {
+      name: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      name:  'Campo de nome tem que estar preenchido',
+			email: {
+        required: 'Email tem que estar preenchido',
+        email: 'Coloque no formato nome@dominio[.complemento]'
+			}
+    }
+	});
 
 });
 

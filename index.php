@@ -68,22 +68,22 @@
 			<form id="form" action="" method="post" class="form">
 				<div class="col-xs-12">
 					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-1"><i class="icon-user white"></i></span>
-					<input id="nome" class="input col-xs-10 col-sm-11 col-lg-11" type="text" placeholder="NOME *" required>
+					<input id="nome" name="name" class="input col-xs-10 col-sm-11 col-lg-11" minlength="5" type="text" placeholder="NOME *" required>
 				</div>
 
 				<div class="col-xs-12 col-lg-6">
 					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-3"><i class="icon-envelope white"></i></span>
-					<input id="email" class="input col-xs-10 col-sm-11 col-lg-9" type="email" placeholder="E-MAIL*" required>
+					<input id="email" name="email" class="input col-xs-10 col-sm-11 col-lg-9" type="email" placeholder="E-MAIL*" required>
 				</div>
 
 				<div class="col-xs-12 col-lg-6">
 					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-2"><i class="icon-mobile-phone white"></i></span>
-					<input id="tel" class="input col-xs-10 col-sm-11 col-lg-10" title="Esse campo só aceita números" type="tel" placeholder="TELEFONE">
+					<input id="tel" name="telefone" class="input col-xs-10 col-sm-11 col-lg-10" minlength="8" title="No mínimo 8 números" type="tel" placeholder="TELEFONE">
 				</div>
 
 				<div class="col-xs-12">
-					<span class="icon bg-black-input white col-xs-2 col-sm-1 col-lg-1"><i class="icon-pencil white"></i></span>
-					<input class="input col-xs-10 col-sm-11 col-lg-11" type="text" placeholder="MENSAGEM">
+					<span id="" class="icon icon-msg bg-black-input white col-xs-2 col-sm-1 col-lg-1"><i class="icon-pencil white"></i></span>
+          <textarea id="" class="input msg col-xs-10 col-sm-11 col-lg-11" type="text" placeholder="MENSAGEM"></textarea>
 				</div>
 
 				<div class="col-xs-12">
